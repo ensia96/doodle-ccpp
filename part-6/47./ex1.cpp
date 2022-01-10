@@ -15,7 +15,7 @@ int main()
 
     // in = fopen("input.txt", "r"); // <- segmentation fault -> 상대 경로 때문에 발생;
 
-    in = fopen("47./input.txt", "r"); // <- 실행 위치 기준으로 파일을 입력해야함
+    in = fopen("part-6/47./input.txt", "r"); // <- 실행 위치 기준으로 파일을 입력해야함
     // 읽을 파일의 이름, 작업 내용 => 파일을 가리키는 포인터를 반환
     // r = 읽기 (read), w = 쓰기 (write)
 
@@ -27,8 +27,8 @@ int main()
     FILE *in, *out; // 입력 스트림과 출력 스트림
     int n;
 
-    in = fopen("47./input.txt", "r");
-    out = fopen("47./output.txt", "w");
+    in = fopen("part-6/47./input.txt", "r");
+    out = fopen("part-6/47./output.txt", "w");
 
     fscanf(in, "%d", &n);
     fprintf(out, "%d\n", n); // out 이라는 스트림에 대해 printf
@@ -46,8 +46,8 @@ int main()
     FILE *in, *out;
     int n;
 
-    in = fopen("47./input.txt", "r");
-    out = fopen("47./output.txt", "a");
+    in = fopen("part-6/47./input.txt", "r");
+    out = fopen("part-6/47./output.txt", "a");
     // w(write, 쓰기) 로 파일을 열면, 기존 내용을 출력 내용으로 아예 대체함
     // a(append, 덧붙이기) 로 파일을 열면, 기존 내용에 출력 내용을 추가함
 

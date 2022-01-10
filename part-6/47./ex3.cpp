@@ -3,7 +3,7 @@
 int main()
 {
     /*
-    FILE* in = fopen("47./ex3.cpp", "r"); // 현재 파일에 대한 입력 스트림
+    FILE* in = fopen("part-6/47./ex3.cpp", "r"); // 현재 파일에 대한 입력 스트림
     char ch;
     while (!feof(in)) { // feof 함수는 파일을 끝까지 읽었을 때 true 반환 (아닐 땐 false 반환)
                         // eof == 'end of file' 의 약자 -> 파일의 끝에서 true 반환
@@ -17,7 +17,7 @@ int main()
     // 마지막에 뭐가 더 출력됨 -> feof 함수의 특성상, 파일의 마지막 내용을 읽은 바로 다음 시점까지 동작함
     */
 
-    FILE* in = fopen("47./ex3.cpp", "r");
+    FILE* in = fopen("part-6/47./ex3.cpp", "r");
     char ch;
     while (fscanf(in, "%c", &ch) != EOF) { // 이렇게 구현해도 됨
                                            // fscanf 함수는 입력받은 문자열의 길이를 반환함
