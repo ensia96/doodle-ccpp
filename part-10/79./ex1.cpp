@@ -207,6 +207,9 @@ int main()
     */
 
     delete p_dogImage;
+    for (Message* m : messages) {
+        delete m;
+    }
 }
 
 // 이번 시간에는, 이렇게, 동적 바인딩을 활용함으로써 생기는 상속의 이점에 대해서 살펴봤음
